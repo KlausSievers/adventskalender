@@ -1,0 +1,9 @@
+#background-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+app-door {
+  position: absolute;
+}

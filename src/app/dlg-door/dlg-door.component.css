@@ -1,0 +1,44 @@
+.close-btn {
+  float: right;
+  top: -24px;
+  right: -24px;
+}
+
+#dlg-content {
+  border: 20px solid transparent;
+  border-image-source: url('../../assets/Merry_Christmas_border_page.jpg');
+  border-image-slice: 22% 25%;
+  border-image-repeat: repeat;
+  border-image-width: 50px;
+  ;
+}
+
+#dlg-content img {
+  max-width: 500px;
+}
+
+.material {
+  float: left;
+  margin-right: 0.5em;
+  padding-right: 0.5em;
+  border-right: #BDBDBD 1px solid;
+  border-bottom: #BDBDBD 1px solid;
+}
+
+.zutaten {
+  float: right;
+  margin-left: 0.5em;
+  padding-left: 0.5em;
+  border-left: #BDBDBD 1px solid;
+  border-bottom: #BDBDBD 1px solid;
+}
+
+.star-list {
+  margin-left: 30px;
+  list-style-image: url('../../assets/stern.png');
+}
+
+.baum-list {
+  margin-left: 30px;
+  list-style-image: url('../../assets/baum.png');
+}

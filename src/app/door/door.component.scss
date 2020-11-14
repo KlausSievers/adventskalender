@@ -1,0 +1,19 @@
+@import "~@angular/material/theming";
+
+.door {
+  border-color: #D500F9;
+  border-style: solid;
+  border-width: 5px;
+  border-radius: 20px;
+  color: #212121;
+  width: 100px;
+  height: 100px;
+  padding:10px;
+  cursor: pointer;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.is-open {
+  background-color: #9E9E9E;
+}

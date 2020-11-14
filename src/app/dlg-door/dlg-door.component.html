@@ -1,0 +1,405 @@
+<button class="close-btn" mat-icon-button mat-dialog-close>
+  <mat-icon aria-hidden="false" aria-label="close icon">close</mat-icon>
+</button>
+<div fxLayout="row" fxLayoutAlign="space-between">
+  <div class="mat-headline">{{titles[data.day]}}</div>
+
+  <div fxLayout="row" fxFlex fxLayoutAlign="space-between" *ngIf="[20].includes(data.day)">
+    <button mat-icon-button (click)="back()">
+      <mat-icon aria-hidden="false" aria-label="forward">arrow_back</mat-icon>
+    </button>
+    <div>
+      {{counter[data.day].value}}/{{counter[data.day].max}}
+    </div>
+    <button mat-icon-button (click)="forward()">
+      <mat-icon aria-hidden="false" aria-label="forward">arrow_forward</mat-icon>
+    </button>
+  </div>
+</div>
+<div mat-dialog-content style="width: 100%;">
+  <!-- <ng-template doorContent></ng-template> -->
+  <div id="dlg-content" [ngSwitch]="data.day">
+
+    <ng-container *ngSwitchCase="1">
+      <div class="mat-title">Adventsgeschichte – Der alte Adventskalender von Großtante Jula ist wirklich sehr alt, aber alt sein bedeutet nicht langweilig sein </div>
+      <div class="mat-body">
+        <p>
+          Am 1. Dezember finden Pia und Pit in Großtante Julas Zimmer ein Päckchen. Für Pia und Pit steht darauf.
+          “Das ist bestimmt unser Adventskalender!”, sagt Pit und reißt das Einwickelpapier auf.
+          Stimmt. Es ist ein Adventskalender mit einem alten, vergilbten Bild von einer verschneiten, weihnachtlich geschmückten Stadt.
+        </p>
+        <p>
+          Pia mault. “Da ist keine Schokolade drin! Und das Bild ist altmodisch.”
+          “Die Türchen hat auch schon jemand aufgemacht”, stellt Pit fest. “Schade!“
+          Die Kinder sind enttäuscht. Dieser olle Adventskalender hat doch bestimmt schon einmal irgendwo an der Wand gehangen!
+        </p>
+        <p>
+          “Wem der wohl gehört hat?”, überlegt Pia.
+          “Mir!”, sagt eine fröhliche Stimme. Es ist Großtante Jula, die ins Zimmer kommt. “Schön, dass ihr meinen alten Kalender entdeckt habt. Gefällt er euch?”
+          Pia und Pit sehen sich betreten an.
+          “Toll!”, meint Pit schließlich schlapp.
+          “Ja, cool”, sagt Pia und tut, als freue sie sich riesig über das Geschenk.
+        </p>
+        <p>
+          Großtante Jula muss lachen. “Ihr seid mir zwei Schwindler!”, sagt sie und setzt sich in den Sessel. “Eure Gesichter sagen etwas anderes.“
+          “Na ja”, meint Pit vorsichtig. “Der Kalender ist ein wenig alt und jemand hat die Türchen geöffnet und wieder zugedrückt.”
+          “Und es ist keine Schokolade drin!”, sagt Pia.
+          Großtante Jula nickt. “Das war ich! Ich habe die Türchen wieder geschlossen, aber hier”, sie tippt sich an den Kopf, “steckt ihr Inhalt noch ganz fest drin.”
+          “In deinem Kopf? Schokolade etwa?” Pia muss lachen.
+        </p>
+        <p>
+          “Nein”, sagt Großtante Jula. “24 Geschichten aus dieser kleinen Kalenderbildstadt. Mein Vater hat sie mir erzählt, als ich so alt war wie ihr. Jeden Tag, wenn ich ein Türchen öffnete, hat er mir eine Geschichte erzählt, und ich habe mir all diese Geschichten gut gemerkt.”
+          “Erzählst du die uns jetzt alle?”, fragt Pit und Pia fügt schnell hinzu:
+          „Geschichten sind viel spannender als Schokolade. Los, erzähle!”
+          “Halt! Halt! Für jeden Adventstag gibt es eine Geschichte”, sagt Großtante Jula.
+          “Dann kannst du gleich die erste erzählen”, ruft Pia und öffnet schnell das erste Türchen. Ein Weihnachtswichtel lacht ihr entgegen. Und da fängt Großtante Jula auch schon an zu erzählen. Klar, eine Wichtelgeschichte ist es mit einem tollen Adventsgeheimnis.
+        </p>
+      </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="2">
+      <div class="mat-body" fxLayout="column">
+        <div style="text-align: center; margin-top: 5em;">
+          <img src="../../assets/butterbrottuetenstern/fertig.jpg">
+          <div style="font-family: Freestyle Script; color: goldenrod; font-size: xx-large;">
+            einfach und schnell gemacht :)
+          </div>
+        </div>
+        <div style=" margin-top: 5em;">
+          <img src="../../assets/butterbrottuetenstern/tueten.jpg" style="float: left; width: 50%; margin-right: 2em;">
+          <div>
+            Für diesen Stern benötigt Ihr mindestens 7 Butterbrottüten.
+            Je nach Belieben könnt Ihr auch mehr Tüten verwenden.
+          </div>
+        </div>
+        <div style=" margin-top: 5em;">
+          <img src="../../assets/butterbrottuetenstern/kleben1.jpg" style="float: right;width: 50%; margin-left: 2em;">
+          <div>
+            Die Tüten werden eine nach der anderen aufeinander geklebt.
+            Beginnen wir mit der ersten Butterbrottüte.
+            Schnappt euch am besten einen Klebestift und klebt entlang der oberen Linie.
+            Achtet darauf, dass Ihr an der geschlossenen Seite der Tüte klebt.
+          </div>
+        </div>
+        <div style=" margin-top: 5em;">
+          <img src="../../assets/butterbrottuetenstern/kleben2.jpg" style="float: left;width: 50%; margin-right: 2em;">
+          <div>
+            Nun klebt Ihr noch an der Mittellinie entlang.
+            Also ein Mal von oben nach unten.
+            Achtet darauf, dass Ihr nicht ganz bis zur Öffnung der Brottüte klebt, da die Zacken sonst zusammen kleben.
+            Nachdem das geschafft ist, klebt Ihr die nächste Tüte darauf.
+          </div>
+        </div>
+        <div style=" margin-top: 5em;">
+          <img src="../../assets/butterbrottuetenstern/faecher.jpg" style="float: right;width: 50%; margin-left: 2em;">
+          <div>
+            <p>
+              Achtet darauf, dass Ihr immer die geschlossene Seite aneinanderklebt!
+            </p>
+            <p>
+              Wenn alle 7 Tüten aufeinander kleben und Ihr sie ein wenig auseinanderzieht, entsteht quasi ein Fächer.
+            </p>
+          </div>
+        </div>
+        <div style=" margin-top: 5em;">
+          <img src="../../assets/butterbrottuetenstern/schneiden.jpg" style="float: left;width: 50%; margin-right: 2em;">
+          <div>
+            <p>
+              Nun könnt Ihr an der offenen Seite die Zacken und die unterschiedlichen Formen aufzeichnen.
+              Ich habe mich für zwei Herzhälften entschieden. Ihr könnt die aber auch einfach weglassen.
+              Als Nächstes müssen wir die Formen ausschneiden.
+            </p>
+            <p>
+              Ihr dürft gerne jemanden um Hilfe bitten, da es wirklich sehr
+              schwer ist, die Sachen auszuschneiden.
+            </p>
+          </div>
+        </div>
+        <div style=" margin-top: 5em;">
+          <img src="../../assets/butterbrottuetenstern/stern.jpg" style="float: right;width: 50%; margin-left: 2em;">
+          <div>
+            Jetzt müssen nur noch die letzten Seiten wie folgt zu einem Stern zusammengeklebt werden.
+            Einfacher geht es, wenn Ihr von beiden Seiten mit den Händen in die Tüte rein fährt und den Stern so schließt. Wer möchte, klebt hier noch einen Faden rein, dann kann der Stern auch aufgehängt werden.
+          </div>
+        </div>
+      </div>
+    </ng-container>
+
+
+    <ng-container *ngSwitchCase="4">
+      <div class="mat-title">Innen Schokolade, außen Schokolade: Nichts schmeckt so lecker wie die schokoladigen Bärentatzen.</div>
+      <div class="zutaten">
+        <div class="mat-subheading-2" style="font-style: italic; margin-bottom: 0; ">Zutaten:</div>
+        <div class="mat-body">
+          <div>280g Butter</div>
+          <div>100g Puderzucker</div>
+          <div>450g Kuvertüre</div>
+          <div>240g Mehl</div>
+          <div>40g Kakao</div>
+        </div>
+      </div>
+      <div>
+        <div class="mat-subheading-2" style="font-style: italic; margin-bottom: 0;">Zubereitung:</div>
+        <div class="mat-body">
+          <p>
+            Die Butter mit dem Puderzucker verrühren. 50 g Kuvertüre raspeln.
+          </p>
+          <p>
+            Das Mehl mit der geraspelten Kuvertüre und dem Kakao mischen und unter die Butter- Zucker-Mischung kneten.
+          </p>
+          <p>
+            Mit nassen Händen haselnussgroße Kugeln formen und auf ein mit Backpapier ausgelegtes Backblech setzen.
+          </p>
+          <p>
+            Die Kugeln mit einer bemehlten Gabel flach drücken und im vorgeheizten Ofen bei 175 Grad (Umluft 155 Grad) 8-10 Minuten backen. Die Tatzen auf einem Kuchengitter auskühlen lassen.
+          </p>
+          <p>
+            Die restliche Kuvertüre im heißen Wasserbad schmelzen und die Tatzen zur Hälfte in die Kuvertüre tauchen. Auf Backpapier trocknen lassen.
+          </p>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="6">
+      <div class="mat-title">
+        Am 6. Dezember ist Nikolaustag! Doch nicht nur ein gefüllter Stiefel macht Klein und Groß glücklich, sondern auch ein selbst gebastelter und mit Süßigkeiten und Nüssen gefüllter Nikolaus.
+      </div>
+      <div style="float:left; margin-right: 0.5em; padding-right: 0.5em; border-right: #BDBDBD 1px solid;  border-bottom: #BDBDBD 1px solid;">
+        <div class="mat-subheading-2" style="font-style: italic; margin-bottom: 0; ">Material:</div>
+        <div class="mat-body">
+          <div>rotes Geschenkpapier</div>
+          <div>eine Toilettenpapierrolle</div>
+          <div>rotes Krepppapier</div>
+          <div>Tonpapier</div>
+          <div>weißer Filz</div>
+          <div>Buntstifte, Schere</div>
+          <div>Alleskleber, Geschenkband</div>
+        </div>
+      </div>
+      <div>
+        <div class="mat-subheading-2" style="font-style: italic; margin-bottom: 0;">Anleitung:</div>
+        <div class="mat-body">
+          <p>
+            Aus dem roten Geschenkpapier ein Rechteck in der Höhe und im Umfang der Toilettenpapier¬rolle zuschneiden. Auf einer Seite des Rechtecks Kleber auftragen und das Rechteck um die Toilettenpapierrolle wickeln.
+          </p>
+          <p>
+            Aus dem roten Tonpapier einen Kreis im Durchmesser der Toiletten¬papierrolle ausschneiden und unten an die Rolle festkleben.
+          </p>
+          <p>
+            Aus dem hautfarbenen Tonpapier ein Gesicht ansschneiden. Augen und Nase mit den Buntsdften aufmalen. Das Gesicht ca. 1 cm unterhalb des oberen Rands der Rolle festkleben.
+          </p>
+          <p>
+            Aus dem Krepppapier einen ca. 15x8 cm breiten Streifen ausschneiden und als Mütze oberhalb des Gesichts um die Rolle kleben.
+          </p>
+          <p>
+            Für den Mützenrand aus dem Filz einen ca. 15 x 1,5 cm großen Streifen ausschnei- den. Den Filz über dem Gesicht um die Rolle kleben.
+          </p>
+          <p>
+            Aus dem Filz einen Bart ausschneiden, den Mund aufmalen und den Bart um das Gesicht kleben.
+          </p>
+          <p>
+            Den Nikolaus mit Nüssen und Süßig-keiten füllen und die Mütze mit dem Geschenkband zubinden.
+          </p>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="7">
+      <div class="mat-body">
+        <p>Es ist wieder Weihnachtszeit. Draußen ist es bitterkalt, und es liegt viel Schnee. In den warmen Zimmern aber sitzen die Kinder. Sie schreiben oder malen ihren Wunschzettel fürs Christkind.
+        </p>
+        <p>
+          Felix ist noch zu klein, er lässt sich von Mutti helfen. Was sich die Kinder alles wünschen! Nina möchte einen Hampelmann, Peter ein Auto, Stefan und Kerstin eine Eisenbahn. Und alle wünschen sich viele Plätzchen. Nächtelang sind die Engel unterwegs, um alle Wunschzettel einzusammeln.
+        </p>
+        <p>
+          Sie eilen von Haus zu Haus, von Ort zu Ort und von einem Land zum an¬dern. Sie sammeln viele Körbe voll und schleppen alle zum Christkind. Das schlägt die Hände über dem Kopf zusammen.
+        </p>
+        <p>
+          „Wie sollen wir nur die vielen Wünsche erfüllen? Unsere Himmelswerkstatt ist viel zu klein. Allein werden wir nie rechtzeitig fertig. Wir brauchen jemanden, der uns hilft.“
+        </p>
+        <p>Das Christkind denkt angestrengt nach. Wer ist stets hilfsbereit? Niemand anders als die Wichtel natürlich! Gleich machen sich zwei Weihnachtsenglein auf den Weg ins Zwergenland.</p>
+        <p>Nach langem Suchen finden die beiden das Zwergenhaus. Sie klopfen an, und ein Wichtel öffnet ihnen. „Das Christkind schickt uns“, erzählen die Englein. „Es ist ganz verzweifelt. Es hat in diesem Jahr so viele Wünsche zu erfüllen, dass unsere Himmelswerkstatt nicht ausreicht. Es fragt daher, ob ihr uns nicht helfen könnt.“
+        </p>
+        <p>
+          „Wir helfen selbstverständlich gern“, versichert das Zwerglein. „Doch nun tretet ein, und wärmt euch erst einmal. Ihr seid sicher ganz durchgefroren von der langen Reise.“ Da hat das Zwerglein recht. Gern nehmen die Englein die Einladung an.
+        </p>
+        <p>Schuhe, Strümpfe und Mäntel sind nass, und die Zwerge hängen sie zum Trocknen auf.
+          Die Englein aber setzen sich vor den heißen Ofen. Es dauert nicht lange, da ist ihnen wieder wohlig warm. Ein Zwerglein bereitet ihnen einen Kräutertee. Ein anderes holt Brot und Marmelade. So eine weite Reise in der kalten Winterluft macht hungrig.
+          Die Englein nennen unterdessen den Wichteln die vielen, vielen \X ünsche der Kinder. Voller Eifer wollen die Zwerge sogleich mit der Arbeit beginnen. Ein paar eilen zum Tannenwald, wo viele schöne Christbäume stehen.
+        </p>
+        <p>Andere suchen in der Werkstatt nach geeignetem Holz. Wieder andere bringen Werkzeug herbei. Und dann wird gesägt und gehobelt. Es wird gehämmert und geschnitzt, ausgeschnitten und angemalt. Im Nu entstehen ein Schaukelpferdchen, eine Puppenwiege, ein Leiterwagen und viele andere schöne Dinge.
+        </p>
+        @TODO Seite 16 UND 18!!!
+
+      </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="10">
+      <div class="mat-title">
+        Wenn es draußen schon nachmittags dunkel wird, bringen bunte Adventslichter Wärme und Licht in die Wohnung. Bei der Auswahl der weihnachtlichen Motive ist der Fantasie keine Grenze gesetzt.
+      </div>
+      <div class="material" style="margin-right: 2.5em;">
+        <div class="mat-subheading-2" style="font-style: italic; margin-bottom: 0">Material:</div>
+        <div class="mat-body">
+          <div>ein leeres Glas</div>
+          <div>weißes Transparentpapier</div>
+          <div>buntes Transparentpapier</div>
+          <div>Teelicht</div>
+          <div>Bleistift, Schere</div>
+          <div>Klebeband, Klebestift</div>
+        </div>
+      </div>
+      <div>
+        <div class="mat-subheading-2" style="font-style: italic; margin-bottom: 0;">Anleitung:</div>
+        <div class="mat-body">
+          <ul class="star-list">
+            <li>
+              Das weiße Transparentpapier auf die Höhe und den Umfang des Glases zuschneiden.
+            </li>
+            <li>
+              Mit dem Bleistift auf das bunte Transparentpapier die Umrisse von Sternen, Tannenbäumen oder anderen Adventsmotiven aufmalen.
+            </li>
+            <li>
+              Die aufgemalten Bilder aus dem bun-ten Transparentpapier ausschneiden und mit dem Klebestift auf das weiße Transparentpapier kleben, Das weiße Tonpapier leicht rollen und mit dem Klebeband am Glas festkleben.
+            </li>
+            <li>
+              Ein Teelicht in das Glas stellen und buntes Transparentpapier von einem Erwachsenen anzünden lassen.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="13">
+      <div class="mat-body">
+        <p>
+          Der kleine Bär Petermann spielte mit seinen Geschwistern draußen vor der Höhle im Wald. Sie raschelten mit ihren Pfoten durch das trockene Laub und kugelten darin herum. Sie hatten viel Spaß.
+        </p>
+        <p>
+          Der Winter stand vor der Tür. Der Himmel hing voller Schnee. Aber noch war keine Flocke gefallen. Früh kam der Abend. Da trat Vater Bär vor die Höhle und rief seine Kinder herein.
+        </p>
+
+        <p>„Es wird Zeit für den großen Schlaf!", sagte er.. „Heute Nacht wird Schnee fallen. Heute Nacht wird der Frost kommen. Da wollen wir zusammenkriechen und die Augen zumachen. Wir wollen schlafen, bis der Frühling uns weckt"</p>
+        <p>„Das dauert mir aber zu lange", sagte Petermann. „Und Schlafen finde ich langweilig. Ich möchte viel lieber noch spielen."</p>
+        <p>„Im Winter wird nicht gespielt", sagte der Vater. „Im Winter wird geschlafen. Aber vorher wollen wir Abendbrot essen. Kommt herein! Die Mutter hat den Tisch schon gedeckt." </p>
+
+        <p>Petermann gehorchte. Essen fand er nicht lang¬weilig. Danach würde man weitersehen.</p>
+        <p>Der Tisch bog sich unter lauter köstlichen Dingen. Es gab Fisch und Eier, Äpfel und Birnen, saftige Beeren und nahrhafte Wurzeln. Und es gab natürlich Honig, jede Menge süßen goldenen Honig. Die ganze Familie langte tüchtig zu. Man würde ja nun viele Wochen nichts mehr bekommen.</p>
+        <p>Nach dem Essen räumte Mutter Bär die Höhle auf. Vater Bär verschloss den Eingang mit Reisig und Laub. Petermann sah ihm neugierig zu. Seine Geschwister schliefen schon halb. Aber er war noch ganz munter.</p>
+        <p>Als die Eltern fertig waren, legten sie sich zu ihren Kindern. Sie brummten schläfrig. Ihr Pelz war weich und warm.</p>
+        <p>Dem kleinen Bären Petermann wollten schon die Augen zufallen. Aber er riss sie wieder auf und dachte: „Ich darf nicht einschlafen! Ich will noch spielen!"</p>
+        <p>Er lauschte auf den gleichmäßigen Atem seiner seiner beiden Geschwister, auf das leise Schnaufen der Mutter und das gemütliche Schnarchen des Vaters. Endlich war er sicher, dass keiner von ihnen aufwachen würde.</p>
+
+        <p>Leise stand er auf und schlich zum Eingang der Höhle. Er schob Laub und Reisig beiseite und schlüpfte hinaus.</p>
+        <p>Draußen schneite es stark. Weder der Mond noch die Sterne waren zu sehen. Die kahlen Bäume hatten ein weißes Kleid angezogen. Und auf dem Weg lag ein lockerer Schneeteppich.</p>
+        <p>Petermann lachte und lief auf weichen Sohlen darüber. Seine Pfoten machten ein schönes Muster. Als er weit genug von der Höhle entfernt war, blieb er stehen.</p>
+
+        <p>„Ich will spielen!", rief er. „Wer spielt mit? Ist keiner mehr wach?"</p>
+        <p>Da raschelte es neben ihm im Laub unter dem Schnee. Eine spitze Schnauze schob sich heraus und zwei blanke schwarze Augen funkelten ihn an. Das war Paulchen Stachelstark, der Igel.</p>
+        <p>„Spielst du mit mir?", fragte Petermann. „Wozu hast du Lust?"
+          „Spielen?", fragte Paulchen Stachelstark zurück. „Um diese Zeit? Ich glaube, du spinnst."
+          „Aber wir sind doch beide ganz munter", sagte Petermann.
+          „Ich bin in Eile", antwortete der Igel. „Ich muss zu meiner Familie. Es wird höchste Zeit für den Winterschlaf."
+          „Ach, Winterschlaf!", sagte Petermann. „So was Langweiliges! Das ist nichts für mich."
+          Doch da war Paulchen Stachelstark schon weg.
+          „Ich will spielen!", rief Petermann. „Wer spielt mit?"
+        </p>
+        <p>Ein kleiner Schatten flitzte die Tanne herunter. Auf dem Ast über Petermanns Kopf blieb er sitzen. Das war Hansi Nagezahn, das Eichhörnchen.</p>
+        <p>„Spielst du mit mir?", fragte Petermama. „Wozu hast du Lust?"
+          „Spielen?", fragte Hansi Nagezahn zurück. „Um diese Zeit? Ich glaube, du spinnst."
+          „Wir können Fangen spielen", sagte Petermann. „Das gefällt dir bestimmt."
+          „Nein, ich bin in Eile", antwortete das Eich-hörnchen. „Ich muss in mein Nest und auf meine Vorräte aufpassen. Diebe sind überall."
+          „Ich habe keine Vorräte", sagte Petermann. „Und Diebe sind mir egal."
+          Doch Hansi Nagezahn war schon weg.
+          „Ich will spielen!", rief Petermann. „Wer spielt mit?"
+        </p>
+
+        <p>Da knackte es im Gebüsch und eine graue Gestalt trat hervor. Das war Willi Zottelmann, der Wolf.
+          „Spielst du mit mir?", fragte Petermann. „Wozu hast du Lust?"
+          „Spielen?", fragte Willi Zottelmann zurück. „Um diese Zeit? Ich glaube, du spinnst."
+          „Wir sind gleich groß", sagte Petermann. „Wir wären sicher gute Spielkameraden."
+          „Ich habe Hunger", sagte der Wolf. „Und hung-rige Leute sind keine guten Spielkameraden."
+          „Ich bin satt", sagte Petermann. „Ich habe ein gutes Abendbrot gehabt."
+          „So siehst du auch aus", meinte der Wolf. „Satt und rund. Wenn ich nicht hungrig wäre, würde ich mit dir spielen. Aber da ich hungrig bin, werde ich dich fressen."
+        </p>
+        <p>Da nahm der kleine Bär Petermann schnell Reiß¬aus. Er rannte über den verschneiten Weg zur Höhle zurück. Willi Zottelmann lachte hinter ihm her. Doch er folgte ihm nicht. Vielleicht hatte er nur einen bösen Scherz gemacht.</p>
+        <p>Hungrige Leute machen gelegentlich böse Scherze.</p>
+        <p>Atemlos schlüpfte Petermann in die Höhle. Er verstopfte den Eingang mit Laub und Reisig. Dann kuschelte er sich zwischen seine Eltern und Geschwister. Er wollte nicht mehr spielen. Er wollte nur noch schlafen.</p>
+      </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="20">
+      <ng-container [ngSwitch]="counter[data.day].value">
+        <div class="mat-body">
+          <div *ngSwitchCase="1">
+            <img src="../../assets/weihnachtskarte/ergebnis.jpg">
+
+          </div>
+          <div *ngSwitchCase="2">
+            <div fxLayout="row" fxLayoutAlign="center center">
+              <div style="font-size: xx-large; color:#00ff66; font-family: Rage; vertical-align: middle;">
+                Das
+              </div>
+              <img src="../../assets/weihnachtskarte/material.jpg" style="width: 75%; margin: 1em;">
+              <div style="font-size: xx-large;; color:#00ff66; font-family: Rage; vertical-align: middle;">
+                wird
+              </div>
+            </div>
+            <div style="font-size: xx-large;; color:#00ff66; font-family: Rage; text-align: center;">
+              benötigt:
+            </div>
+            <ul class="baum-list" style="font-size: larger;">
+              <li>bunte Bögen Tonzeichenpapier</li>
+              <li>Bleistift</li>
+              <li>Lineal</li>
+              <li>Schere</li>
+            </ul>
+            <div style="font-size: xx-large; color:#00ff66; font-family: Rage; text-align: center;">
+              Jetzt kann es losgehen.
+            </div>
+          </div>
+          <div *ngSwitchCase="3">
+            <img src="../../assets/weihnachtskarte/streifen.jpg">
+            <div style="text-align: center; font-size: larger;">
+              Zuerst brauchen wir bunte Streifen.
+              Die können sowohl unterschiedlich lang als auch unterschiedlich breit sein.
+              Je nachdem wie groß der Baum sein soll,
+              könnt Ihr entscheiden wie viele Streifen Ihr schneiden wollt.
+            </div>
+          </div>
+          <div *ngSwitchCase="4">
+            <img src="../../assets/weihnachtskarte/kleben.jpg">
+            <div style="text-align: center; font-size: larger;">
+              Jetzt könnt Ihr die Streifen entweder auf ein Tonkarton
+              oder auf eine bereits vorgefertigte Karte kleben.
+              Klebt die Streifen am besten von groß nach klein, damit am Ende
+              ein Tannenbaum zu erkennen ist.
+            </div>
+          </div>
+          <div *ngSwitchCase="5">
+            <img src="../../assets/weihnachtskarte/stern.jpg">
+            <div style="text-align: center; font-size: larger;">
+              Wenn Ihr alle Streifen befestigt habt, könnt Ihr auf
+              braunem Tonzeichenpapier einen Baumstamm zeichnen
+              und diesen ausschneiden.
+              Auf dem gelben Papier könnt Ihr einen Stern
+              aufzeichnen und ausschneiden oder einfach mit einem
+              Stanzer ausstanzen.
+            </div>
+          </div>
+          <div *ngSwitchCase="6">
+            <img src="../../assets/weihnachtskarte/ergebnis.jpg">
+            <div>
+              <div style="text-align: center; font-size: larger;">
+                Jetzt nur noch aufkleben und
+                dann ist die Karte auch schon fertig.
+
+                Viel Spaß beim Nachbasteln :)
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </ng-container>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+<div class="door" (click)="openDoor(day)" [ngClass]="{'is-open':isOpen()}">
+  <span class="day-label" >
+    {{day}}
+  </span>
+  <img src="../../assets/rentier2.png" *ngIf="isOpen()" style="width: 90px; height: auto;">
+</div>
+
