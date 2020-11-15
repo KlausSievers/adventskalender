@@ -74,8 +74,8 @@ app-door[ng-reflect-day="15"] {
 }
 
 app-door[ng-reflect-day="16"] {
-  top: 575px;
-  left: 640px;
+  top: 550px;
+  left: 530px;
 }
 
 app-door[ng-reflect-day="17"] {
@@ -114,6 +114,6 @@ app-door[ng-reflect-day="23"] {
 }
 
 app-door[ng-reflect-day="24"] {
-  top: 7200px;
-  left: 750px;
+  top: 700px;
+  left: 720px;
 }
