@@ -4,17 +4,17 @@
   right: -24px;
 }
 
-#dlg-content {
+/* #dlg-content {
   border: 20px solid transparent;
   border-image-source: url('../../assets/Merry_Christmas_border_page.jpg');
   border-image-slice: 22% 25%;
   border-image-repeat: repeat;
   border-image-width: 50px;
   ;
-}
+} */
 
 #dlg-content img {
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .material {
