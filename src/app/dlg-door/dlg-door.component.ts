@@ -18,10 +18,10 @@ export class DlgDoorComponent implements OnInit, AfterViewInit {
     2: 'Ein Stern aus Butterbrottüten',
     4: 'Bärentatzen',
     6: 'Nikolaus',
-    7: 'Wichtelweihnacht',
     10: 'Adventslicht',
     13: 'Petermann schläft ein',
-    20: 'Eine kinderleichte Weihnachtskarte'
+    20: 'Eine kinderleichte Weihnachtskarte',
+    23: 'Wichtelweihnacht'
   }
 
   counter = [];
