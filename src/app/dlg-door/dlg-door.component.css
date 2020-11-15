@@ -35,10 +35,10 @@
 
 .star-list {
   margin-left: 30px;
-  list-style-image: url('../../assets/stern.png');
+  list-style-image: url('../../assets/bullet/stern.png');
 }
 
 .baum-list {
   margin-left: 30px;
-  list-style-image: url('../../assets/baum.png');
+  list-style-image: url('../../assets/bullet/baum.png');
 }
