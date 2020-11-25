@@ -8,20 +8,36 @@ import { Door2Component } from '../door2/door2.component';
 @Component({
   selector: 'app-dlg-door',
   templateUrl: './dlg-door.component.html',
-  styleUrls: ['./dlg-door.component.css']
+  styleUrls: ['./dlg-door.component.css', './border.css']
 })
 
 
 export class DlgDoorComponent implements OnInit, AfterViewInit {
-  titles =  {
+  titles = {
     1: 'Der alte Adventskalender',
-    2: 'Ein Stern aus Butterbrottüten',
-    4: 'Bärentatzen',
+    2: 'Cookies wie bei Subway',
+    3: 'Nikolaus zu verschenken',
+    4: 'Nikolaus-Dessert',
+    5: 'Der Osternikolaus',
     6: 'Nikolaus',
-    10: 'Adventslicht',
-    13: 'Petermann schläft ein',
-    20: 'Eine kinderleichte Weihnachtskarte',
-    23: 'Wichtelweihnacht'
+    7: 'Cracker mit Käse',
+    8: 'Adventslicht',
+    9: 'Petermann schläft ein',
+    10: 'Bärentatzen',
+    11: 'Lass uns einen Schneemann basteln',
+    12: 'Fünf Flocken',
+    13: 'Die Himmelslaterne',
+    14: 'Ein Stern aus Butterbrottüten',
+    15: 'Sternenmännchen',
+    16: 'Wunschzettel',
+    17: 'Eine kinderleichte Weihnachtskarte',
+    18: 'Hexenhaus aus Butterkeksen',
+    19: 'Rudolph mit der roten Nase',
+    20: '5 kleine Weihnachtsmänner',
+    21: 'Buntgeschmückter Tannenbaum',
+    22: 'Lebkuchenkerzen',
+    23: 'Wichtelweihnacht',
+    24: 'Der kleine Hase im Weihnachtswald'
   }
 
   counter = [];
@@ -32,15 +48,18 @@ export class DlgDoorComponent implements OnInit, AfterViewInit {
   //@ViewChild(DoorDirective, {static: true}) doorContent: DoorDirective;
 
   constructor(@Inject(MAT_DIALOG_DATA) public data: { day: number }, private componentFactoryResolver: ComponentFactoryResolver) {
-    this.counter[20] = {
+
+    this.counter[2] = {
+      max: 10,
+      value: 1
+    };
+
+    this.counter[17] = {
       max: 6,
       value: 1
     };
 
-    // this.counter[7] = {
-    //   max: 8,
-    //   value: 1
-    // };
+
 
     // this.counter[13] = {
     //   max: 8,

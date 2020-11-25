@@ -1,0 +1,88 @@
+.border-2 {
+  min-width: 35px;
+  background-image: url('../../assets/border/border-2.jpg');
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin-right: 2em;
+}
+
+.border-3 {
+  border: 40px solid transparent;
+  border-image-source: url('../../assets/border/border-3.png');
+  border-image-slice: 65 75;
+  border-image-repeat: repeat;
+  border-image-width: 25px;
+}
+
+.border-4 {
+  border: 40px solid transparent;
+  border-image-source: url('../../assets/border/border-4.jpg');
+  border-image-slice: 90 95;
+  border-image-repeat: repeat;
+  border-image-width: 35px;
+}
+
+.border-5 {
+  border: 30px solid transparent;
+  border-image-source: url('../../assets/border/border-5.jpg');
+  border-image-slice: 50 50;
+  border-image-repeat: repeat;
+  border-image-width: 30px;
+}
+
+.border-6 {
+  border: 30px solid transparent;
+  border-image-source: url('../../assets/border/border-6.png');
+  border-image-slice: 255 260 255 260;
+  border-image-repeat: repeat;
+  border-image-width: 80px;
+}
+
+
+.border-7 {
+  border: 40px solid transparent;
+  border-image-source: url('../../assets/border/border-7.png');
+  border-image-slice: 150 250 210 250;
+  border-image-repeat: repeat;
+  border-image-width: 25px;
+}
+
+.border-9 {
+  border: 40px solid transparent;
+  border-image-source: url('../../assets/border/border-9-2.png');
+  border-image-slice: 30 28;
+  border-image-repeat: repeat;
+  border-image-width: 25px;
+}
+
+.border-11 {
+  border: 40px solid transparent;
+  border-image-source: url('../../assets/border/border-11.png');
+  border-image-slice: 96 110;
+  border-image-repeat: repeat;
+  border-image-width: 25px;
+}
+
+.border-12-1 {
+  min-width: 35px;
+  background-image: url('../../assets/border/border-12-1.png');
+  background-repeat: repeat-y;
+  background-size: contain;
+  margin-right: 2em;
+}
+
+.border-13 {
+  border: 40px solid transparent;
+  border-image-source: url('../../assets/border/border-13.jpg');
+  border-image-slice: 232 75 75 265;
+  border-image-repeat: repeat;
+  border-image-width: 25px;
+}
+
+.border-easter {
+  border: 40px solid transparent;
+  border-image-source: url('../../assets/border/eastern.png');
+  border-image-slice: 120 130 110 125;
+  border-image-repeat: repeat;
+  border-image-width: 35px;
+}

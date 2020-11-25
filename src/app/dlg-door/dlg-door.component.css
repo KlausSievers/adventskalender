@@ -4,17 +4,12 @@
   right: -24px;
 }
 
-/* #dlg-content {
-  border: 20px solid transparent;
-  border-image-source: url('../../assets/Merry_Christmas_border_page.jpg');
-  border-image-slice: 22% 25%;
-  border-image-repeat: repeat;
-  border-image-width: 50px;
-  ;
-} */
-
 #dlg-content img {
   max-width: 100%;
+}
+
+.copyright {
+  font-size: 6pt;
 }
 
 .material {
@@ -33,6 +28,10 @@
   border-bottom: #BDBDBD 1px solid;
 }
 
+.step {
+  margin-top: 2em;
+}
+
 .star-list {
   margin-left: 30px;
   list-style-image: url('../../assets/bullet/stern.png');
@@ -41,4 +40,67 @@
 .baum-list {
   margin-left: 30px;
   list-style-image: url('../../assets/bullet/baum.png');
+}
+
+.fahne-list {
+  margin-left: 30px;
+  list-style-image: url('../../assets/bullet/fahne.png');
+}
+
+.light-list {
+  margin-left: 30px;
+  list-style-image: url('../../assets/bullet/light.png');
+}
+
+.cookies ul {
+  list-style-type: square;
+}
+
+.img-left, .img-right, .step-img {
+  width: 100%;
+}
+
+.img-left+div, .img-right+div {
+  margin-top: 0.5em;
+}
+
+.double-img {
+  padding-bottom: 1em;
+}
+
+#material-baerentatzen, #zutaten-baerentatzen {
+  width: calc(100% - 100px - 1em);
+}
+
+@media screen and (min-width: 960px) {
+  .img-left {
+    float: left;
+    width: 50%;
+    margin-right: 2em;
+  }
+  .img-right {
+    float: right;
+    width: 50%;
+    margin-left: 2em;
+  }
+  .step-img {
+    width: 50%;
+  }
+  .img-left+div, .img-right+div {
+    margin-top: 0em;
+  }
+  .double-img {
+    width: 45%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .double-img-left {
+    padding-right: 2em;
+    padding-bottom: 1em;
+  }
+
+  #material-baerentatzen, #zutaten-baerentatzen {
+    width: 65%;
+  }
 }

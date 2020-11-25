@@ -7,3 +7,9 @@
 app-door {
   position: absolute;
 }
+
+body {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
