@@ -1,5 +1,7 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+/etc/assets_back_up.zip
+
 # compiled output
 /dist
 /tmp
