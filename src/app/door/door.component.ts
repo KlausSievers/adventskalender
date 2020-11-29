@@ -72,8 +72,9 @@ export class DoorComponent implements OnInit {
   }
 
   private canBeOpened(door: number): boolean {
-    //return door <= new Date().getDate();
-    return true;
+    var now = new Date();
+    return door <= now.getDate() && now.getMonth() === 11;
+   // return true;
   }
 
   public isOpen(): boolean {
