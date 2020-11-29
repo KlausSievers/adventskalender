@@ -72,6 +72,7 @@
   width: calc(100% - 100px - 1em);
 }
 
+
 @media screen and (min-width: 960px) {
   .img-left {
     float: left;
@@ -102,5 +103,10 @@
 
   #material-baerentatzen, #zutaten-baerentatzen {
     width: 65%;
+  }
+
+  #cracker-zutaten {
+    width: 45%;
+    margin-right: 0;
   }
 }
